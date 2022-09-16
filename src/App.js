@@ -2,6 +2,27 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const data = [
+    {
+      title: "Ethereum activates The Merge as it shifts to proof of stake",
+      author: "SomeUser",
+      time: "10/28/1997",
+      comments: 219,
+    },
+    {
+      title: "LibreRPi – open source replacements for RPi firmware ",
+      author: "SomeUser",
+      time: "10/28/1997",
+      comments: 219,
+    },
+    {
+      title: "Algolia Acquires Search.io",
+      author: "SomeUser",
+      time: "10/28/1997",
+      comments: 219,
+    },
+  ];
+
   return (
     <div className="App">
       <div className="navbar">
@@ -37,6 +58,19 @@ function App() {
             <a href="#login">login</a>
           </div>
         </ul>
+      </div>
+      <div>
+        <ol>
+          {data.map((item) => (
+            <li>
+              <ul>
+                <li>{item.title}</li>
+                <li>{item.author}</li>
+                <li>{item.comments}</li>
+              </ul>
+            </li>
+          ))}
+        </ol>
       </div>
     </div>
   );
