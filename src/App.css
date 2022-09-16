@@ -29,3 +29,19 @@ a {
   color: white;
   padding: 12px 75px;
 }
+
+td {
+  
+  text-align: start;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #828282;
+}
+
+.App{
+  margin-top: 5px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: #f6f6ef;
+}
+

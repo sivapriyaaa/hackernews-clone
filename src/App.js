@@ -59,15 +59,16 @@ function App() {
           </div>
         </ul>
       </div>
-      <div>
+      <div className="container">
         <ol>
           {data.map((item) => (
             <li>
-              <ul>
-                <li>{item.title}</li>
-                <li>{item.author}</li>
-                <li>{item.comments}</li>
-              </ul>
+              {item.title}
+              <table>
+                <tr>
+                  <td> {item.author} </td> | <td> {item.comments} </td> |
+                </tr>
+              </table>
             </li>
           ))}
         </ol>
